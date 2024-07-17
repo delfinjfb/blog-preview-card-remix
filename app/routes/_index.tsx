@@ -1,4 +1,6 @@
 import type {MetaFunction} from "@remix-run/node";
+import illustrationArticleSvg from "app/images/illustration-article.svg";
+import imageAvatar from "app/images/image-avatar.webp";
 
 export const meta: MetaFunction = () => {
 	return [
@@ -12,7 +14,7 @@ export default function Index() {
 			<div className="bg-white p-4 rounded-lg shadow-lg max-w-xs">
 				<div className="flex flex-col items-center">
 					<img
-						src="public/images/illustration-article.svg" 
+						src={illustrationArticleSvg}
 						alt="Card"
 						className="w-full rounded-md"
 					/>
@@ -28,7 +30,7 @@ export default function Index() {
 						</p>
 						<div className="flex items-center mt-4">
 							<img
-								src="public/images/image-avatar.webp" 
+								src={imageAvatar}
 								alt="Author"
 								className="w-8 h-8 rounded-full"
 							/>
