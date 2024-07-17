@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: "Figtree";
+	src: url("public/fonts/Figtree-SemiBold.ttf2") format("woff2"),
+		url("public/fonts/Figtree-SemiBold.ttf") format("truetype");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Figtree";
+	src: url("public/fonts/Figtree-ExtraBold.ttf2") format("woff2"),
+		url("public/fonts/Figtree-ExtraBold.ttf") format("truetype");
+	font-weight: 800;
+}

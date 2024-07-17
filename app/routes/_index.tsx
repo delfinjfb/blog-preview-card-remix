@@ -13,7 +13,7 @@ export default function Index() {
 		<>
 			<header></header>
 			<main>
-				<div className="flex items-center justify-center min-h-screen bg-yellow-400 ">
+				<div className="flex items-center justify-center min-h-screen bg-yellow-400 font-figtree">
 					<div className="bg-white p-4 rounded-lg border border-black shadow-custom-shadow max-w-xs">
 						<div className="flex flex-col items-center">
 							<img
