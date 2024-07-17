@@ -1,49 +1,42 @@
 import type {MetaFunction} from "@remix-run/node";
 
-
 export const meta: MetaFunction = () => {
 	return [
-		{title: "New Remix App"},
+		{title: "Blog preview Card - FEM"},
 		{name: "description", content: "Welcome to Remix!"}
 	];
 };
-
 export default function Index() {
 	return (
-		<div className="font-sans p-4">
-			<h1 className="text-3xl">Welcome to Remix</h1>
-			<ul className="list-disc mt-4 pl-6 space-y-2">
-				<li>
-					<a
-						className="text-blue-700 underline visited:text-purple-900"
-						target="_blank"
-						href="https://remix.run/start/quickstart"
-						rel="noreferrer"
-					>
-						5m Quick Start
-					</a>
-				</li>
-				<li>
-					<a
-						className="text-blue-700 underline visited:text-purple-900"
-						target="_blank"
-						href="https://remix.run/start/tutorial"
-						rel="noreferrer"
-					>
-						30m Tutorial
-					</a>
-				</li>
-				<li>
-					<a
-						className="text-blue-700 underline visited:text-purple-900"
-						target="_blank"
-						href="https://remix.run/docs"
-						rel="noreferrer"
-					>
-						Remix Docs
-					</a>
-				</li>
-			</ul>
+		<div className="flex items-center justify-center min-h-screen bg-yellow-400">
+			<div className="bg-white p-4 rounded-lg shadow-lg max-w-xs">
+				<div className="flex flex-col items-center">
+					<img
+						src="public/images/illustration-article.svg" 
+						alt="Card"
+						className="w-full rounded-md"
+					/>
+					<div className="mt-4 text-center">
+						<span className="text-yellow-600 font-semibold text-sm">
+							Learning
+						</span>
+						<p className="text-gray-500 text-xs mt-1">Published 21 Dec 2023</p>
+						<h3 className="text-lg font-bold mt-2">HTML & CSS foundations</h3>
+						<p className="text-gray-600 text-sm mt-1">
+							These languages are the backbone of every website, defining
+							structure, content, and presentation.
+						</p>
+						<div className="flex items-center mt-4">
+							<img
+								src="public/images/image-avatar.webp" 
+								alt="Author"
+								className="w-8 h-8 rounded-full"
+							/>
+							<p className="text-gray-700 text-sm ml-2">Greg Hooper</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 }
