@@ -24,7 +24,7 @@ export default function Index() {
 						<div className="flex flex-col items-center">
 							<img
 								src={illustrationArticleSvg}
-								alt="Illustration showing HTML and CSS symbols"
+								alt="HTML and CSS symbols"
 								className="w-full rounded-md"
 							/>
 							<div className="mt-4">
@@ -59,7 +59,7 @@ export default function Index() {
 					</div>
 				</main>
 				<footer className="flex justify-center items-center">
-					<div className="flex items-center space-x-4">
+					<div className="flex items-center space-x-4 text-sm">
 						<Link
 							to="/privacy-policy"
 							className="text-black hover:underline"
