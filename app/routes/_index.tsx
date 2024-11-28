@@ -20,7 +20,7 @@ export default function Index() {
 					className="flex items-center justify-center"
 					aria-labelledby="main-heading"
 				>
-					<div className="bg-white p-4 rounded-lg border border-black shadow-custom-shadow max-w-lg">
+					<div className="bg-white p-4 rounded-3xl border border-black shadow-custom-shadow max-w-lg">
 						<div className="flex flex-col items-center">
 							<img
 								src={illustrationArticleSvg}
