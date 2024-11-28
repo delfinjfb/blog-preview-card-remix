@@ -15,3 +15,6 @@
 		url("public/fonts/Figtree-ExtraBold.ttf") format("truetype");
 	font-weight: 800;
 }
+.shadow-custom-shadow {
+	box-shadow: 0.5rem 0.5rem black;
+}
