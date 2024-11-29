@@ -1,42 +1,30 @@
-import { useEffect } from "react";
+import {useEffect} from "react";
 
-const Matomo = () => {
-  useEffect(() => {
-    const _paq = (window._paq = window._paq || []);
+const Matomo = () =>
+	useEffect(() => {
+		const _paq = (window._paq = window._paq || []);
+		_paq.push(["trackPageView"]);
+		_paq.push(["enableLinkTracking"]);
+		_paq.push(["disableCookies"]);
 
-    // Only track if the current URL is a page, not a resource
-    if (
-      window.location.pathname.endsWith(".png") ||
-      window.location.pathname.endsWith(".jpg")
-    ) {
-      console.warn("Matomo: Not tracking resource file as a page view");
-      return;
-    }
+		const u = "https://delfinowebsite.matomo.cloud/";
+		_paq.push(["setTrackerUrl", u + "matomo.php"]);
+		_paq.push(["setSiteId", "2"]);
 
-    // Track page view and enable link tracking
-    _paq.push(["trackPageView"]);
-    _paq.push(["enableLinkTracking"]);
-    _paq.push(["disableCookies"]);
-    _paq.push([
-      "setCustomUrl",
-      "https://recipe-page-react-tailwind-delfin.vercel.app/"
-    ]);
+		const d = document;
+		const g = d.createElement("script");
+		const s = d.getElementsByTagName("script")[0];
 
-    // Set tracker URL and site ID
-    const u = "https://delfinowebsite.matomo.cloud/";
-    _paq.push(["setTrackerUrl", u + "matomo.php"]);
-    _paq.push(["setSiteId", "2"]);
+		g.async = true;
+		g.defer = true; // Defer loading
+		g.src = "https://cdn.matomo.cloud/delfinowebsite.matomo.cloud/matomo.js";
 
-    // Load Matomo script
-    const d = document;
-    const g = d.createElement("script");
-    const s = d.getElementsByTagName("script")[0];
-    g.async = true;
-    g.src = "https://cdn.matomo.cloud/delfinowebsite.matomo.cloud/matomo.js";
-    s.parentNode.insertBefore(g, s);
-  }, []);
-
-  return null;
-};
+		if (s && s.parentNode) {
+			s.parentNode.insertBefore(g, s);
+		} else {
+			// If no script tag exists, append the Matomo script directly to the document head or body
+			d.head.appendChild(g);
+		}
+	}, []);
 
 export default Matomo;
