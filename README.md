@@ -1,29 +1,49 @@
-# Blog Preview Card - Frontend Mentor Challenge
+# 🌟 Blog Preview Card - Frontend Mentor Challenge
 
-## Description
+![Blog Preview Card](./app/images/illustration-article.svg)
 
-This is a solution to the Blog Preview Card challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges). This project aims to replicate the blog preview card with a visually appealing design, adhering to the provided specifications while maintaining accessibility and responsive design.
+**A visually appealing and responsive blog preview card built with Remix and Tailwind CSS.** This project replicates the design challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges), focusing on clean design, accessibility, and responsive layouts.
 
-## Features
+---
 
-- Responsive design for desktop and mobile.
-- Clean, semantic HTML and accessible markup.
-- Integrated box-shadow effect for depth.
-- Styled with Tailwind CSS for simplicity and maintainability.
+## ✨ Features
 
-## Tech Stack
+- **Responsive Design**: Works seamlessly on desktop and mobile devices.
+- **Accessible Markup**: Built with semantic HTML and ARIA labels.
+- **Interactive Elements**: Includes hover effects and keyboard navigation.
+- **Privacy Compliant**: Features a dedicated privacy policy page with GDPR compliance.
+- **Clean Styling**: Designed with Tailwind CSS for modular and maintainable code.
 
-- **React**: The front-end was built using React to make it dynamic and modular.
-- **Remix**: Remix is used for server-side rendering and providing an optimized build pipeline.
-- **Tailwind CSS**: Tailwind was used for styling to quickly implement the given design.
-- **JavaScript/TypeScript**: Developed using TypeScript for better type safety and development experience.
+---
 
-## Project Structure
+## 🛠 Tech Stack
 
-- **`app/`**: Contains core components, pages, and styles.
-- **`public/`**: Public assets like fonts and icons.
-- **`tailwind.config.ts`**: Tailwind CSS configuration.
-- **`vite.config.ts`**: Vite configuration for the Remix build process.
+- **Remix**: Optimized build pipeline and server-side rendering for performance.
+- **Tailwind CSS**: Utility-first CSS framework for fast and flexible styling.
+- **React + TypeScript**: Component-based architecture with type safety.
+- **Matomo Analytics**: Privacy-friendly analytics integration.
+
+---
+
+## 📂 Project Structure
+
+├── app/ # Core application directory
+│ ├── components/ # Reusable components (e.g., AuthorSection, Footer)
+│ ├── images/ # Images and illustrations
+│ ├── routes/ # Page routes (e.g., privacy-policy, \_index)
+│ ├── styles/ # CSS styles (e.g., Tailwind config)
+│ ├── entry.client.tsx # Client entry point
+│ ├── entry.server.tsx # Server entry point
+│ ├── root.tsx # Application root file
+├── public/ # Public assets (fonts, favicon)
+├── tailwind.config.ts # Tailwind CSS configuration
+├── tsconfig.json # TypeScript configuration
+├── vite.config.ts # Vite configuration for Remix
+├── .eslintrc.cjs # ESLint configuration
+├── README.md # Project documentation
+├── style-guide.md # Frontend Mentor style guide
+├── package.json # Dependencies and scripts
+└── package-lock.json # Dependency lock file
 
 ## Installation
 
@@ -48,10 +68,22 @@ This is a solution to the Blog Preview Card challenge from [Frontend Mentor](htt
 
    The application should be running at [http://localhost:3000](http://localhost:3000).
 
-## Usage
+---
 
-- Visit the **Privacy Policy** link at the bottom of the page for privacy information.
-- This project showcases a **blog preview** with details like publication date, content summary, and author information.
+## 📸 Screenshot
+
+![Blog Preview Card](./app/images/illustration-article.svg)
+
+This is the blog preview card as implemented in the project, featuring responsive design and visually engaging elements.
+
+---
+
+## 🌍 Live Demo
+
+- **Live Site**: [Blog Preview Card](https://blog-preview-card-remix-delfin.vercel.app/)
+- **Frontend Mentor Challenge**: [Challenge Details](https://www.frontendmentor.io/solutions/blog-preview-card-made-in-react-remix-with-tailwind-lyMxD7uJYa)
+
+---
 
 ## Accessibility Features
 
@@ -72,7 +104,7 @@ This project can be easily deployed using Vercel. It’s configured to be produc
 
 ## Links
 
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://blog-preview-card-remix-delfin.vercel.app/m)
 - [Frontend Mentor](https://www.frontendmentor.io/challenges)
 
 ## Credits
@@ -88,3 +120,17 @@ This project is licensed under the MIT License.
 
 - GitHub: [@delfinjfb](https://github.com/delfinjfb)
 - Frontend Mentor Profile: [@delfinjfb](https://www.frontendmentor.io/profile/delfinjfb)
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**. Feel free to use and modify as needed.
+
+---
+
+### 🔍 Notes
+
+- The file `privacy-policy.tsx` ensures GDPR compliance and is included in the `routes` folder.
+- The `Matomo.tsx` file provides a privacy-friendly analytics setup.
+- Fonts (e.g., `Figtree`) are located in the `public/fonts/` directory.
